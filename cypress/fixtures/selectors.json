@@ -1,0 +1,5 @@
+{
+    "usernameField" : "[placeholder='Username']",
+    "passwordField" :"[placeholder='Username']",
+    "loginbuttonField" : "[data-test=login-button]"
+}
