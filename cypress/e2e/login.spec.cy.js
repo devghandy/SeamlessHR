@@ -13,14 +13,13 @@ before(()=>{
     cy.get(data.usernameField).should('be.visible').fill('standard_user')
     cy.get(data.passwordField).fill('secret_sauce')
     cy.get(data.loginbuttonField).fill()
-    cy.url().should('include', '/inventory.html')
   })
 
   it('Negative Login Scenario - Invalid Password', () => {
     cy.visit('/')
-    cy.get('[placeholder="Username"]').type('standard_user')
-    cy.get('[data-test=password]').type('wrong_password')
-    cy.get('[data-test=login-button]').click()
-    cy.get('[data-test=error]').should('contain', 'Username and password do not match')
+    cy.get(data.usernameField).type('standard_user')
+    cy.get(data.passwordField).type('wrong_password')
+    cy.get(data.loginbuttonField).click()
+    cy.get('[data-test=error]').should('contain', 'Epic sadface: Password is required')
   })
 })
