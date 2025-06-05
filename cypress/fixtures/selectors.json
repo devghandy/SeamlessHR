@@ -1,5 +1,23 @@
 {
-    "usernameField" : "[placeholder='Username']",
-    "passwordField" :"[placeholder='Username']",
-    "loginbuttonField" : "[data-test=login-button]"
-}
+    "usernameField": "[data-test='username']",
+    "passwordField": "[placeholder='Password']",
+    "loginButton": "[data-test=login-button]",
+    "errorMessage": "[data-test=error]",
+    "burgerMenu": "#react-burger-menu-btn",
+    "logoutLink": "#logout_sidebar_link",
+    "cartBadge": ".shopping_cart_badge",
+    "cartLink": ".shopping_cart_link",
+    "cartItems": ".cart_item",
+    "itemName": ".inventory_item_name",
+    "addToCartBackpack": "[data-test=add-to-cart-sauce-labs-backpack]",
+    "addToCartBikeLight": "[data-test=add-to-cart-sauce-labs-bike-light]",
+    "checkoutButton": "[class='shopping_cart_link']",
+    "firstName": "[data-test=firstName]",
+    "lastName": "[data-test=lastName]",
+    "postalCode": "[data-test=postalCode]",
+    "continueButton": "[data-test=continue]",
+    "finishButton": "[data-test=finish]",
+    "checkoutComplete": ".checkout_complete_container",
+    "completeHeader": ".complete-header"
+  }
+

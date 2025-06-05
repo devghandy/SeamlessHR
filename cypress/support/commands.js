@@ -25,10 +25,12 @@ Cypress.Commands.add('login', ()=>{
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
- beforeEach(() =>{
-        cy.on('uncaught:exception', ()=>{
-          return false
-        })
-        cy.visit('/')
-        cy.login()
-      })
+
+
+//  beforeEach(() =>{
+//         cy.on('uncaught:exception', ()=>{
+//           return false
+//         })
+//         cy.visit('/')
+//         cy.login()
+//       })
